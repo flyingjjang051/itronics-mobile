@@ -63,7 +63,7 @@ button {
     top: 0;
     width: 60px;
     height: 60px;
-    background-color: #000;
+    //background-color: #000;
     span {
       display: block;
       width: 30px;
@@ -87,8 +87,12 @@ button {
     #gnb {
       left: 0;
     }
+    .login {
+      color: #111;
+    }
     .btnAll {
       span {
+        background-color: #000;
         &:nth-child(1) {
           top: 29px;
           transform: rotate(45deg);
@@ -108,6 +112,7 @@ button {
 #logo {
   position: absolute;
   left: 20px;
+  z-index: 2;
   a {
     display: flex;
     align-items: center;
@@ -121,8 +126,9 @@ button {
   position: fixed;
   width: 100%;
   height: 100%;
-  top: 60px;
+  top: 0px;
   left: 100%;
+  padding-top: 60px;
   background-color: #fff;
   transition: all 0.25s ease-in-out;
   .list {
