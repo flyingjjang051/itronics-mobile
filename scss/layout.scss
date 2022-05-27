@@ -40,6 +40,14 @@ button {
     color: #111;
     background-color: #fff;
     box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+    .btnAll {
+      span {
+        background-color: #111;
+      }
+    }
+    .login {
+      color: #111;
+    }
   }
   &:after {
     top: 60px;
@@ -183,26 +191,38 @@ button {
 }
 
 #footer {
-  padding: 50px 100px;
+  padding: 30px 20px;
   display: flex;
+  flex-direction: column;
+  .fLogo {
+    text-align: center;
+  }
   .addressBox {
-    margin-left: 150px;
+    margin-top: 20px;
     .customer {
       margin-bottom: 30px;
       font-size: 20px;
       font-weight: 500;
       display: flex;
+      font-size: 16px;
+      justify-content: center;
       dl {
         display: flex;
-        margin-right: 50px;
+        margin-right: 20px;
       }
     }
     address {
       margin-bottom: 30px;
       p {
-        margin-bottom: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+        line-height: 1.25;
+        font-size: 14px;
         span {
-          margin-right: 20px;
+          margin-right: 0;
+          display: block;
+          margin-bottom: 10px;
+          word-break: keep-all;
         }
       }
     }
@@ -210,17 +230,23 @@ button {
       margin-bottom: 30px;
       ul {
         display: flex;
+        justify-content: center;
+        font-size: 14px;
         li {
-          margin-right: 15px;
+          margin-right: 5px;
+          margin-left: 5px;
         }
       }
     }
     .copyright {
+      text-align: center;
       color: #999;
+      font-size: 14px;
     }
   }
   .familySite {
     margin-left: auto;
+    margin-top: 50px;
     select {
       height: 50px;
       padding: 0 80px 0 20px;

@@ -76,25 +76,27 @@
 
 #product .contentsBox .navigation button.next:before { vertical-align: top; font-family: "Material Icons"; content: "chevron_right"; display: inline-block; margin-left: 0; }
 
-#make { display: flex; justify-content: center; align-items: center; flex-direction: column; overflow: hidden; text-align: center; min-height: 100vh; }
+#make { display: flex; justify-content: center; align-items: center; flex-direction: column; overflow: hidden; text-align: center; padding-top: 50px; }
 
-#make .title { margin-bottom: 30px; font-size: 42px; }
+#make .title { margin-bottom: 20px; font-size: 20px; padding: 0 20px; word-break: keep-all; }
 
-#make p { margin-bottom: 30px; color: #999; line-height: 1.5; }
+#make p { margin-bottom: 20px; color: #999; line-height: 1.5; font-size: 12px; padding: 0 20px; word-break: keep-all; }
 
-#make img { width: 70vw; }
+#make p br { content: ""; }
 
-#news { display: flex; justify-content: center; flex-direction: column; padding: 0 200px; min-height: 100vh; }
+#make img { width: 100vw; }
 
-#news .title { margin-bottom: 50px; font-size: 42px; }
+#news { display: flex; justify-content: center; flex-direction: column; padding: 50px 20px; min-height: 100vh; }
 
-#news .menu { display: flex; justify-content: flex-end; margin-bottom: 80px; font-weight: 700; }
+#news .title { margin-bottom: 30px; font-size: 20px; }
 
-#news .menu li { margin-left: 50px; }
+#news .menu { display: flex; justify-content: flex-end; margin-bottom: 50px; font-weight: 700; }
 
-#news .contents { display: flex; justify-content: space-between; }
+#news .menu li { margin-left: 30px; font-size: 14px; }
 
-#news .contents li { flex-basis: calc(25% - 20px); }
+#news .contents { display: flex; flex-direction: column; justify-content: space-between; }
+
+#news .contents li { flex-basis: 100%; border-bottom: 1px solid #ccc; padding: 20px 0; }
 
 #news .contents li .dateBox { margin-bottom: 30px; }
 
@@ -104,6 +106,6 @@
 
 #news .contents li .dateBox .date:before { top: 50%; left: 0; transform: translateY(-50%); display: block; position: absolute; content: ""; display: block; width: 1px; height: 10px; background-color: #333; }
 
-#news .contents li .txt { margin-bottom: 30px; font-size: 28px; font-weight: 500; display: -webkit-box; height: 3em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 2; /* autoprefixer: off */ -webkit-box-orient: vertical; word-break: break-all; }
+#news .contents li .txt { margin-bottom: 30px; font-size: 18px; font-weight: 500; display: -webkit-box; height: 3em; overflow: hidden; line-height: 1.5; -webkit-line-clamp: 2; /* autoprefixer: off */ -webkit-box-orient: vertical; word-break: break-all; }
 
 #news .contents li .more { text-transform: uppercase; }
